@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="js/jquery.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/click.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+  <style>
+    /* стили для элемента body */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+
+    /* дополнительные стили для этого примера */
+    .itcss__items {
+      counter-reset: slide;
+    }
+
+    .itcss__item {
+      counter-increment: slide;
+    }
+  </style>
+  <!-- Подключаем JS слайдера -->
+  <script defer src="js/simple-adaptive-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="wrap header">
+    <div class="header_inner">
+      <div>
+        <img class="header_first_list" src="img/lOGO_VRAR.png" />
+      </div>
+      <div class="header_img_container">
+        <a href="https://rs.gov.ru/" target="blank"><img class="header_list_img" src="img/россотрудничество 1.png"
+            alt="Россотрудничество" /></a>
+        <a href="https://concord.ac/" target="blank"><img class="header_img_logo" src="img/logo_container.png"
+            alt="СП Содружество" /></a>
+      </div>
+    </div>
+
+    <div class="header_body">
+      <div class="header_burger">
+        <span></span>
+      </div>
+      <nav class="header_menu">
+
+        <div class="header_hide header_hide_top">
+          <img src="img/LOGO_VRAR_small.png">
+        </div>
+
+        <div class="header_menu_flex">
+          <ul class="header_list">
+            <li>
+              <a href="#project" class="header_link">О проекте</a>
+            </li>
+            <li>
+              <a href="#partners" class="header_link header_link_height">Партнеры</a>
+            </li>
+            <li>
+              <a href="#program" class="header_link">Программа мероприятий</a>
+            </li>
+          </ul>
+          <div class="header_phone_container">
+              <a class="header_link header_link_color" href="tel:+7 (499) 110-19-20">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.7142 17.014C22.1529 17.014 20.6222 16.77 19.1702 16.29C18.4742 16.054 17.6195 16.27 17.1929 16.7087L14.3155 18.8807C11.0142 17.1193 8.90353 15.0073 7.16619 11.7327L9.27953 8.92599C9.81286 8.39265 10.0035 7.61532 9.77419 6.88598C9.29286 5.42465 9.04753 3.89398 9.04753 2.33398C9.04753 1.23132 8.15019 0.333984 7.04753 0.333984H2.38086C1.27819 0.333984 0.380859 1.23132 0.380859 2.33398C0.380859 15.1993 10.8489 25.6673 23.7142 25.6673C24.8169 25.6673 25.7142 24.77 25.7142 23.6673V19.014C25.7142 17.9113 24.8169 17.014 23.7142 17.014Z"/>
+                  </svg>                  
+                +7 (499) 110-19-20</a>
+          </div>
+        </div>
+
+        <div class="header_hide header_hide_down">
+          <div><a href="https://rs.gov.ru/" target="blank"><img src="img/россотрудничество 1_burger.svg" alt=""></a>
+          </div>
+          <div><a href="https://vk.com/rsgov_qazaqstan" target="blank"><img src="img/Русский дом_burger.svg" alt=""></a>
+          </div>
+          <div> <a href="https://concord.ac/" target="blank"><img src="img/Содружество_burger.svg" alt=""></a></div>
+        </div>
+
+      </nav>
+    </div>
+
+    <div class="header_last_list header_btn">
+      <button class="header_btn_title">Вход</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="slogan">
+      <div class="slogan_text">
+        <div class="slogan_container">
+          <ul class="slogan_number">
+            <li class="slogan_list">Конструируй</li>
+            <li class="slogan_list">Роботизируй</li>
+            <li class="slogan_list">Программируй</li>
+          </ul>
+        </div>
+        <div class="slogan_about">
+          <ul class="slogan_item">
+            <img class="slogan_img slogan_activity">
+            <li class="slogan_info">VR, AR, робототехника</li>
+          </ul>
+          <ul class="slogan_item">
+            <img class="slogan_img">
+            <li class="slogan_info slogan_city">Казахстан 2023</li>
+          </ul>
+        </div>
+          <button class="btn_name">Стать партнером</button>
+      </div>
+      <div class="slogan_foto slogan_div_foto">
+        <img class="slogan_foto_robot" src="img/illustration.png" />
+      </div>
+      <div class="slogan_foto">
+        <img class="slogan_foto_robot " src="img/робот 1.png" alt="robot" />
+        <img class="slogan_foto_robot_cut" src="img/illustration_robot_cut.png">
+      </div>
+    </div>
+
+    <div class="wrap project">
+      <h2 class="project_title" id="project">О проекте</h2>
+      <div class="project_container">
+        <div class="project_img">
+          <img class="project_img_robot" src="img/img_robot_2.png" alt="robot" />
+        </div>
+        <div class="project_about">
+          <p class="project_info">
+            Проект предполагает проведение образовательно-просветительских мероприятий техническо-творческой
+            направленности «Дни робототехники и инновационных образовательных технологий» в Казахстане
+          </p>
+
+          <p class="project_info_next">Направлен на популяризацию российской науки, российских образовательных и
+            просветительских проектов, на
+            обучение инновационным образовательным технологиям</p>
+
+          <div class="project_program">
+            <p class="project_info">Будет интересно:</p>
+            <ul class="project_list">
+              <li class="project_item project_item_line">обучающимся образовательных организаций дополнительного,
+                среднего и высшего
+                образования
+              </li>
+              <li class="project_item project_item_list">педагогическим работникам</li>
+              <li class="project_item project_item_list">иностранным гражданам, изучающим русский язык</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container wrap">
+      <div class="programm">
+        <p class="programm_topic" id="program">Программа мероприятий </p>
+        <div class="programm_slider">
+          <!-- Разметка слайдера -->
+          <div class="itcss">
+            <div class="itcss__wrapper">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                  <div class="programm_slider_blocks">
+                    <div class="programm_slider_block one">
+                      <img class="programm_slider_img" src="img/illustrations_robot.svg" alt="programm robot">
+                    </div>
+                    <div class="programm_slider_block">
+                      <p class="programm_slider_toptext">Проект предусматривает реализацию следующих
+                        активностей в гг. Астане, Алматы, Уральске: </p>
+                      <div>
+                        <div class="programm_slider_list">
+                          <img class="programm_slider_list_img" src="img/Rectangle 14.svg" alt="">
+                          <p class="programm_slider_text">демонстрация интерактивной карты вузов
+                            России, в которых осуществляется подготовка
+                            специалистов по остроактуальным направлениям (робототехника,
+                            мехатроника,
+                            виртуальная и дополненная реальность)</p>
+
+                        </div>
+                        <div class="programm_slider_list">
+                          <img class="programm_slider_list_img" src="img/Rectangle 14.svg" alt="">
+                          <p class="programm_slider_text">проведение презентации «Десятилетие
+                            науки и технологий в России»</p>
+
+                        </div>
+                        <div class="programm_slider_list">
+                          <img class="programm_slider_list_img" src="img/Rectangle 14.svg" alt="">
+                          <p class="programm_slider_text">работа выставки с демонстрацией
+                            экспонатов робототехники и российских образовательных и культурных
+                            VR-проектов</p>
+
+                        </div>
+                        <div class="programm_slider_list">
+                          <img class="programm_slider_list_img" src="img/Rectangle 14.svg" alt="">
+                          <p class="programm_slider_text">проведение мастер-классов «Собираем
+                            луноход»</p>
+
+                        </div>
+                        <div class="programm_slider_list">
+                          <img class="programm_slider_list_img" src="img/Rectangle 14.svg" alt="">
+                          <p class="programm_slider_text">проведение интерактивных практических
+                            занятий «Разработка игры в виртуальной реальности»</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="itcss__item">
+                  <div style="height: 250px; background: #607d8b;"></div>
+                </div>
+                <div class="itcss__item">
+                  <div style="height: 250px; background: #f44336;"></div>
+                </div>
+                <div class="itcss__item">
+                  <div style="height: 250px; background: #4caf50;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+                  <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container wrap">
+      <div class="partners">
+        <p class="programm_topic" id="partners">Партнеры</p>
+        <div class="partners_slider">
+          <a href="https://rs.gov.ru/" target="_blank"><img class="partners_slider_img"
+              src="img/img_россотрудничество 1.svg" alt="programm robot"></a>
+          <a class="padding" href="https://concord.ac/" target="_blank"><img class="partners_slider_img"
+              src="img/imf_содружество лого цветной 1.svg" alt="programm robot"></a>
+          <a href="https://vk.com/rsgov_qazaqstan" target="_blank"><img class="partners_slider_img"
+              src="img/img_русскийдом.svg" alt="programm robot"></a>
+        </div>
+      </div>
+      <div class="partner">
+        <button class="partner_button button_text">Стать партнером</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="container wrap">
+    <footer class="footer">
+      <div class="footer_block first">
+        <div>
+          <a href="https://concord.ac/" target="_blank"><img src="img/logo_container.svg" alt="logo sodruzestvo"></a>
+        </div>
+        <div class="footer_contacts">
+          <img class="footer_contacts_icons" src="img/phone.svg" alt="">
+          <a class="footer_contacts_text" href="tel:+74991101920">+7 (499) 110-19-20</a>
+        </div>
+        <div class="footer_contacts">
+          <img class="footer_contacts_icons" src="img/mail.svg" alt="">
+          <a class="footer_contacts_text" href="mailto:vr-kz@concord.ac">vr-kz@concord.ac</a>
+        </div>
+      </div>
+      <div class="footer_block">
+        <div class="footer_blocks"><a class="footer_contacts_text"
+            href="files/Политика_обработки_ПДн_на_сайте_Содружество_проект.docx" download="">Политика
+            конфиденциальности </a>
+        </div>
+        <div class="footer_blocks"><a class="footer_contacts_text"
+            href="files/Согласие_на_обработку_ПДн_на_сайте_Содружество_проект.docx" download="">Согласие на
+            обработку персональных данных</a>
+        </div>
+        <div class="footer_blocks"> <a class="footer_contacts_text"
+            href="files/Согласие_на_обработку_персональных_данных_для_Содружество_для_детей.docx" download="">Согласие
+            Пользователя на обработку персональных данных</a>
+        </div>
+      </div>
+      <div class="footer_block">
+        <a href="https://rs.gov.ru/" target="_blank"><img class="footer_logos" src="img/img_россотрудничество 1.svg"
+            alt=""></a>
+        <a href="https://vk.com/rsgov_qazaqstan" target="_blank"><img class="footer_logos" src="img/img_русскийдом.svg"
+            alt=""></a>
+      </div>
+
+    </footer>
+    <p class="footer_bottomtext">© 2023 ООО СП «СОДРУЖЕСТВО»</p>
+  </div>
+</body>
+
+</html>
